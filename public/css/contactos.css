@@ -1,0 +1,297 @@
+/*------------------------------------------------------------------------------------------------------*/
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*------------------------------------------------------------------------------------------------------*/
+
+body{
+    background-color: #c0c0c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+      /*--Comienza Barra de Navegacion--*/
+    /*------------------------------------*/
+
+.envase{
+    background-color:#000000;
+    max-width: 1140px;
+    margin: auto;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    left:0px;
+    border-bottom: 3px solid #9f9f9f;
+    z-index: 10;
+}
+header .fila{
+    justify-content: space-between;
+    align-items: center;
+}
+header .nombre-de-la-marca a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .5s ease;
+}
+header .nombre-de-la-marca a:hover{
+    color:orangered;
+    font-size: 40px;
+}
+header .barra-de-navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .barra-de-navegacion ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .barra-de-navegacion ul li a{
+    margin-right: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .barra-de-navegacion ul li a::before{
+    content: " ";
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .barra-de-navegacion ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+header .barra-de-navegacion ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+    /*------------------------------------*/
+        /*--Fin Barra de Navegacion--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/    
+
+    /*------------------------------------*/
+            /*--Comienza Contactame--*/
+    /*------------------------------------*/
+.contactame{
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 100px 15px;
+}
+.contactame .seccion-titulo{
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.contactame .seccion-titulo h1{
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 10px;
+    position: relative;
+}
+.contactame .seccion-titulo h1:before{
+    content: " ";
+    left: 44.5%;
+    position: absolute;
+    height: 3px;
+    right: 44.5%;
+    background-color: #ff4500;
+    bottom: 0px;
+}
+.contactame .formulario-de-contacto{
+    background-color: #ffffff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+}
+.contactame .formulario-de-contacto .texto{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contactame .formulario-de-contacto .texto h2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.contactame .formulario-de-contacto .texto p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5f5f5f;
+    margin: 0px;
+}
+.contactame .formulario-de-contacto .space-between{
+    justify-content: space-between;
+}
+.contactame .formulario-de-contacto .col-6{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+.contactame .formulario-de-contacto .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contactame .formulario-de-contacto .control-de-forma{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #808080;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.contactame .formulario-de-contacto textarea.control-de-forma{
+    height: 80px;
+}
+
+.contactame .formulario-de-contacto .control-de-forma::placeholder{
+    color: #838383;
+}
+.contactame .formulario-de-contacto .label{
+    display: block;
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 18px;
+}
+.contactame .formulario-de-contacto .boton{
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contactame .formulario-de-contacto .boton a{
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: #ff4500;
+    box-shadow: 0px 0px 15px #d5d5d5;
+}
+.contactame .formulario-de-contacto .boton a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+    /*------------------------------------*/
+            /*--Fin Contactame--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/    
+
+    /*------------------------------------*/
+            /*--Comienza Contacto--*/
+    /*------------------------------------*/
+
+.contacto{
+    margin: 0;
+    padding: 0;
+}
+.cuentas-sociales{
+    text-align: right;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.cuentas-sociales a{
+    height: 50px;
+    width: 50px;
+    background-color: #ff4500;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 15px #d5d5d5;
+    line-height: 58px;
+    text-align: center;
+    margin: 0 10px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.cuentas-sociales a:hover{
+    background-color: #000000;
+}
+.cuentas-sociales a .fab {
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.cuentas-sociales a:hover .fab {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+    /*------------------------------------*/
+            /*--Fin Contacto--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+            /*--Comienza Footer--*/
+    /*------------------------------------*/
+
+.footer{
+    position: fixed;
+    right: 0px;
+    left:0px;
+    background-color: #000;
+    bottom: 0px;
+    padding-left: 0;
+    width: 100%;
+    height: 40px;
+        
+}
+.footer .caja .copyright{
+    margin-top: 10px;
+    margin-left: 520px;
+    display: inline-block;
+    text-align: center;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 400;
+}
+        
+    /*------------------------------------*/
+              /*--Fin Footer--*/
+    /*------------------------------------*/
+        
+/*-------------------------------------------------------------------------------------------------------*/

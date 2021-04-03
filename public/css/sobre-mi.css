@@ -1,0 +1,307 @@
+/*------------------------------------------------------------------------------------------------------*/
+
+body{
+    background-color: #c0c0c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+        /*--Comienza Encabezamiento--*/
+    /*------------------------------------*/
+
+.envase{
+    background: color #000000;
+    max-width: 1140px;
+    margin: auto;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    left:0px;
+    border-bottom: 3px solid #9f9f9f;
+    z-index: 10;
+}
+header .fila{
+    justify-content: space-between;
+    align-items: center;
+}
+header .nombre-de-la-marca a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .5s ease;
+}
+header .nombre-de-la-marca a:hover{
+    color:orangered;
+    font-size: 40px;
+}
+header .barra-de-navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .barra-de-navegacion ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .barra-de-navegacion ul li a{
+    margin-right: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .barra-de-navegacion ul li a::before{
+    content: " ";
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .barra-de-navegacion ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+header .barra-de-navegacion ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+    /*------------------------------------*/
+         /*--Fin Encabezamiento--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/    
+
+    /*------------------------------------*/
+            /*--Comienza Sobre Mi--*/
+    /*------------------------------------*/
+
+.sobre-mi{
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 100px 15px;
+    background-color: #c0c0c0;
+}
+.sobre-mi .seccion-titulo{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.sobre-mi .seccion-titulo h1{
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 10px;
+    position: relative;
+}
+.sobre-mi .seccion-titulo h1:before{
+    content: " ";
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 90%;
+    background-color: #ff4500;
+    bottom: 0px;
+}
+.text-uppercase{
+    text-transform: uppercase!important ;
+}
+.sobre-mi .seccion-titulo p.small{
+    display: block;
+    font-size: 14px;
+    color: #5f5f5f;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.sobre-mi .sobre-contenedor .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.sobre-mi .sobre-contenedor .img img{
+    width: 100%;
+    display: block;
+    border: solid 3px #ff4500;
+    border-radius: 10%;
+}
+.sobre-mi .sobre-contenedor .texto{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+}
+.sobre-mi .sobre-contenedor .texto h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #000000;
+}
+.sobre-mi .sobre-contenedor .texto h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    color: #000000; 
+}
+.sobre-mi .sobre-contenedor .texto h6 span{
+    color: #ff4500;
+}
+.sobre-mi .sobre-contenedor .texto p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5f5f5f;
+    margin: 0 0 20px;
+}
+.sobre-mi .sobre-contenedor .texto .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sobre-mi .sobre-contenedor .texto .info .lista{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 10px;
+}
+.sobre-mi .sobre-contenedor .texto .info .lista label{
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.sobre-mi .sobre-contenedor .texto .info .lista p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5f5f5f;
+}
+
+    /*------------------------------------*/
+            /*--Fin Sobre Mi--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+            /*--Comienza Footer--*/
+    /*------------------------------------*/
+
+.footer{
+    position: fixed;
+    right: 0px;
+    left:0px;
+    background-color: #000;
+    bottom: 0px;
+    padding-left: 0;
+    width: 100%;
+    height: 40px;
+    
+}
+.footer .caja .copyright{
+    margin-top: 10px;
+    margin-left: 520px;
+    display: inline-block;
+    text-align: center;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 400;
+}
+    
+    /*------------------------------------*/
+               /*--Fin Footer--*/
+    /*------------------------------------*/
+    
+/*-------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 991px){
+    header .barra-de-navegacion ul li a{
+        font-size: 13px;
+    }
+    .sobre-mi{
+        margin-left: 0px;
+    }
+    .sobre-mi .seccion-titulo h1{
+        margin-top: 25px;
+    }
+    .sobre-mi .sobre-contenedor .img{
+       flex: 0 0 100%;
+       max-width: 100%;
+       padding-bottom: 15px;
+    }
+    .sobre-mi .sobre-contenedor .texto .info{
+        display: block;
+    }
+    .sobre-mi .sobre-contenedor .texto .info .lista{
+        display: block;
+    }
+    .sobre-mi .sobre-contenedor .texto p{
+        font-size: 15px;
+    }
+    .footer .caja .copyright{
+        margin-left: 5px;
+    }
+}
+@media(max-width: 767px){
+    header .barra-de-navegacion ul li a{
+        font-size: 10px;
+    }
+    .sobre-mi .seccion-titulo h1{
+        margin-top: 25px;
+    }
+    .sobre-mi .sobre-contenedor .texto .info{
+        display: block;
+    }
+    .sobre-mi .sobre-contenedor .texto .info .lista{
+        display: block;
+    }
+    .footer .caja .copyright{
+        margin-left: 5px;
+    }
+}
+
+@media(max-width: 414px){
+    header .barra-de-navegacion ul li a{
+        font-size: 3px;
+    }
+    .sobre-mi .seccion-titulo h1{
+        margin-top: 25px;
+    }
+    .sobre-mi .sobre-contenedor{
+        margin: 0;
+        padding: 0;
+    }
+    .sobre-mi .sobre-contenedor .texto p{
+        padding: 0;
+        font-size: 3;
+        margin:0;
+        display: block;
+        text-align: right;
+    }
+    .footer .caja .copyright{
+        margin-left: 5px;
+    }
+}
