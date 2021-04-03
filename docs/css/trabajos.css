@@ -1,0 +1,308 @@
+/*------------------------------------------------------------------------------------------------------*/
+
+body{
+    background-color: #c0c0c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+        /*--Comienza Encabezamiento--*/
+    /*------------------------------------*/
+
+.envase{
+    background-color:#000000;
+    max-width: 1140px;
+    margin: auto;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    left:0px;
+    border-bottom: 3px solid #9f9f9f;
+    z-index: 10;
+}
+header .fila{
+    justify-content: space-between;
+    align-items: center;
+}
+header .nombre-de-la-marca a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .5s ease;
+}
+header .nombre-de-la-marca a:hover{
+    color:orangered;
+    font-size: 40px;
+}
+header .barra-de-navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .barra-de-navegacion ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .barra-de-navegacion ul li a{
+    margin-right: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .barra-de-navegacion ul li a::before{
+    content: " ";
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .barra-de-navegacion ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+header .barra-de-navegacion ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+    /*------------------------------------*/
+         /*--Fin Encabezamiento--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/    
+
+    /*------------------------------------*/
+            /*--Comienza Portafolio--*/
+    /*------------------------------------*/
+
+.portafolio{
+    background-color: #c0c0c0;
+    padding: 100px 7px;
+}
+.portafolio .seccion-titulo h1{
+    left: 470px;
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 10px;
+    position: relative;
+}
+.portafolio .seccion-titulo h1:before{
+    content: " ";
+    left: 22%;
+    position: absolute;
+    height: 3px;
+    right: 30%;
+    background-color: #ff4500;
+    bottom: 0px;
+}
+.portafolio .botones-de-filtro{
+    padding-top: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.portafolio .botones-de-filtro ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.portafolio .botones-de-filtro ul li{
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 0px;
+}
+.portafolio .botones-de-filtro ul li.active{
+    color: #ff4500;
+    border-bottom: 2px solid #ff4500;
+}
+.portafolio .botones-de-filtro{
+    margin-bottom: 10px;
+}
+.portafolio .portafolio-galeria{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portafolio .portafolio-galeria .item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+    padding: 8px;
+}
+.portafolio .portafolio-galeria .item .inner{
+    position: relative;
+}
+.portafolio .portafolio-galeria .item img{
+    height: 350px;
+    width: 100%;
+    display: block;
+    border-radius: 10%;
+    border: solid 2px #2e2e2e;
+}
+.portafolio .portafolio-galeria .item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    display: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.portafolio .portafolio-galeria .item:hover .overlay{
+    display: flex;
+}
+.portafolio .portafolio-galeria .item .overlay .fa{
+    height: 50px;
+    width: 50px;
+    background-color: #ff4500;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: galleryIcon .5s ease;
+}
+@keyframes galleryIcon{
+    0%{
+        transform: translateY(-20px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+.portafolio .portafolio-galeria .item .overlay h4{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    animation: galleryText .5s ease;
+}
+@keyframes galleryText{
+    0%{
+        transform: translateY(20px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+    /*------------------------------------*/
+            /*--Fin Portafolio--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+          /*--Comienza Caja Ligera--*/
+    /*------------------------------------*/
+
+.lightbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox.show{
+    display: flex;
+}
+.lightbox.hide{
+    display: none;
+}
+.lightbox .close-lightbox{
+    height: 35px;
+    width: 35px;
+    background-color: #ff4500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 101;  
+}
+.lightbox img{
+    max-width: 90%;
+    max-height: 80%;
+    display: block;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+            /*--Comienza Footer--*/
+    /*------------------------------------*/
+
+.footer{
+    position: fixed;
+    right: 0px;
+    left:0px;
+    background-color: #000;
+    bottom: 0px;
+    padding-left: 0;
+    width: 100%;
+    height: 40px;
+        
+}
+.footer .caja .copyright{
+    margin-top: 10px;
+    margin-left: 520px;
+    display: inline-block;
+    text-align: center;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 400;
+}
+        
+    /*------------------------------------*/
+              /*--Fin Footer--*/
+    /*------------------------------------*/
+        
+/*-------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 991px){
+    header .barra-de-navegacion ul li a{
+        font-size: 13px;
+    }
+    
+}
