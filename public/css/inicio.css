@@ -256,6 +256,10 @@ header .barra-de-navegacion ul li a.active::before{
     background-color: #ffffff;
     color: #000000;
 }
+.ham-burger .fa{
+    font-size: 3px;
+    color: #ffffff;
+}
 
     /*------------------------------------*/
               /*--Fin Inicio--*/
@@ -297,5 +301,13 @@ header .barra-de-navegacion ul li a.active::before{
 @media(max-width: 991px){
     .Inicio .Inicio-contenido .block h1{
         font-size: 50px;
+    }
+}
+@media(max-width: 767px){
+    header{
+        padding: 15px;
+    }
+    .barra-de-navegacion{
+        display: none;
     }
 }

@@ -237,71 +237,15 @@ header .barra-de-navegacion ul li a.active::before{
     
 /*-------------------------------------------------------------------------------------------------------*/
 
-@media(max-width: 991px){
-    header .barra-de-navegacion ul li a{
-        font-size: 13px;
-    }
-    .sobre-mi{
-        margin-left: 0px;
-    }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
-    }
-    .sobre-mi .sobre-contenedor .img{
-       flex: 0 0 100%;
-       max-width: 100%;
-       padding-bottom: 15px;
-    }
-    .sobre-mi .sobre-contenedor .texto .info{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto .info .lista{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto p{
-        font-size: 15px;
-    }
-    .footer .caja .copyright{
-        margin-left: 5px;
-    }
-}
-@media(max-width: 767px){
-    header .barra-de-navegacion ul li a{
-        font-size: 10px;
-    }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
-    }
-    .sobre-mi .sobre-contenedor .texto .info{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto .info .lista{
-        display: block;
-    }
-    .footer .caja .copyright{
-        margin-left: 5px;
-    }
-}
 
-@media(max-width: 414px){
-    header .barra-de-navegacion ul li a{
-        font-size: 3px;
+@media(max-width: 1080px){
+    header{
+        padding: 15px;
     }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
-    }
-    .sobre-mi .sobre-contenedor{
-        margin: 0;
-        padding: 0;
-    }
-    .sobre-mi .sobre-contenedor .texto p{
-        padding: 0;
-        font-size: 3;
-        margin:0;
-        display: block;
-        text-align: right;
+    .barra-de-navegacion{
+        display: none;
     }
     .footer .caja .copyright{
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
