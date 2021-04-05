@@ -187,7 +187,18 @@ header .barra-de-navegacion ul li a.active::before{
     color: #3f3f3f;
     margin: 10px 0 10px;
 }
-
+.ham-burger .fa{
+    font-size: 30px;
+    display: none;
+    height: 37px;
+    width: 45px;
+    background-color: #ff4500;
+    color: #000000;
+    border-radius: 3px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+}
     /*------------------------------------*/
             /*--Fin Trabajos--*/
     /*------------------------------------*/
@@ -223,3 +234,51 @@ header .barra-de-navegacion ul li a.active::before{
     /*------------------------------------*/
         
 /*-------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 1080px){
+    header{
+        padding: 15px;
+        position: fixed;
+    }
+    header .nombre-de-la-marca a{
+        color: #ff4500;
+    }
+    .ham-burger .fa{
+        display: inline-block;
+    }
+    .barra-de-navegacion{
+        position: absolute;
+        background-color: #000000;
+        border-top: 2px solid #9f9f9f;
+        width: 100%;
+        left: 0;
+        top: 69px;
+        padding: 15px;
+        display: none;
+    }
+    .barra-de-navegacion.show{
+        display: block;
+    }
+    header .barra-de-navegacion ul li{
+        display: block;
+        margin-left: 0;
+    }
+    header .barra-de-navegacion ul li a{
+        line-height: 47px;
+    }
+    header .barra-de-navegacion ul li a::before{
+        background-color: #ff4500;
+    }
+    .Trabajos .seccion-titulo h1{
+        left: 435px;
+    }
+    .footer .caja .copyright{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 1033px){
+
+    .Trabajos .seccion-titulo h1{
+        left: 410px;
+    }
+}

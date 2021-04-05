@@ -199,6 +199,22 @@ header .barra-de-navegacion ul li a.active::before{
     line-height: 24px;
     color: #5f5f5f;
 }
+.boton a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.ham-burger .fa{
+    font-size: 30px;
+    display: none;
+    height: 37px;
+    width: 45px;
+    background-color: #ff4500;
+    color: #000000;
+    border-radius: 3px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+}
 
     /*------------------------------------*/
             /*--Fin Sobre Mi--*/
@@ -237,71 +253,42 @@ header .barra-de-navegacion ul li a.active::before{
     
 /*-------------------------------------------------------------------------------------------------------*/
 
-@media(max-width: 991px){
-    header .barra-de-navegacion ul li a{
-        font-size: 13px;
-    }
-    .sobre-mi{
-        margin-left: 0px;
-    }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
-    }
-    .sobre-mi .sobre-contenedor .img{
-       flex: 0 0 100%;
-       max-width: 100%;
-       padding-bottom: 15px;
-    }
-    .sobre-mi .sobre-contenedor .texto .info{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto .info .lista{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto p{
-        font-size: 15px;
-    }
-    .footer .caja .copyright{
-        margin-left: 5px;
-    }
-}
-@media(max-width: 767px){
-    header .barra-de-navegacion ul li a{
-        font-size: 10px;
-    }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
-    }
-    .sobre-mi .sobre-contenedor .texto .info{
-        display: block;
-    }
-    .sobre-mi .sobre-contenedor .texto .info .lista{
-        display: block;
-    }
-    .footer .caja .copyright{
-        margin-left: 5px;
-    }
-}
 
-@media(max-width: 414px){
-    header .barra-de-navegacion ul li a{
-        font-size: 3px;
+@media(max-width: 1080px){
+    header{
+        padding: 15px;
+        position: fixed;
     }
-    .sobre-mi .seccion-titulo h1{
-        margin-top: 25px;
+    header .nombre-de-la-marca a{
+        color: #ff4500;
     }
-    .sobre-mi .sobre-contenedor{
-        margin: 0;
-        padding: 0;
+    .ham-burger .fa{
+        display: inline-block;
     }
-    .sobre-mi .sobre-contenedor .texto p{
-        padding: 0;
-        font-size: 3;
-        margin:0;
+    .barra-de-navegacion{
+        position: absolute;
+        background-color: #000000;
+        border-top: 2px solid #9f9f9f;
+        width: 100%;
+        left: 0;
+        top: 69px;
+        padding: 15px;
+        display: none;
+    }
+    .barra-de-navegacion.show{
         display: block;
-        text-align: right;
+    }
+    header .barra-de-navegacion ul li{
+        display: block;
+        margin-left: 0;
+    }
+    header .barra-de-navegacion ul li a{
+        line-height: 47px;
+    }
+    header .barra-de-navegacion ul li a::before{
+        background-color: #ff4500;
     }
     .footer .caja .copyright{
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }

@@ -257,10 +257,17 @@ header .barra-de-navegacion ul li a.active::before{
     color: #000000;
 }
 .ham-burger .fa{
-    font-size: 3px;
-    color: #ffffff;
+    font-size: 30px;
+    display: none;
+    height: 37px;
+    width: 45px;
+    background-color: #ff4500;
+    color: #000000;
+    border-radius: 3px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
 }
-
     /*------------------------------------*/
               /*--Fin Inicio--*/
     /*------------------------------------*/
@@ -298,16 +305,63 @@ header .barra-de-navegacion ul li a.active::before{
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-@media(max-width: 991px){
-    .Inicio .Inicio-contenido .block h1{
-        font-size: 50px;
-    }
-}
-@media(max-width: 767px){
+@media(max-width: 1080px){
     header{
+        border-bottom: 3px solid #9f9f9f;
+        background-color: #000000;
         padding: 15px;
+        position: fixed;
+    }
+    header .nombre-de-la-marca a{
+        color: #ff4500;
+    }
+    .ham-burger .fa{
+        display: inline-block;
+    }
+    header .fila{
+        background-color: #000000;
     }
     .barra-de-navegacion{
+        position: absolute;
+        background-color: #000000;
+        border-top: 2px solid #9f9f9f;
+        width: 100%;
+        left: 0;
+        top: 69px;
+        padding: 15px;
         display: none;
+    }
+    .barra-de-navegacion.show{
+        display: block;
+    }
+    header .barra-de-navegacion ul li{
+        display: block;
+        margin-left: 0;
+    }
+    header .barra-de-navegacion ul li a{
+        line-height: 47px;
+    }
+    header .barra-de-navegacion ul li a::before{
+        background-color: #ff4500;
+    }
+    .Inicio{
+        background-image: url("../Imagenes/01.jpg");
+        min-height: 120vh;
+        min-width: 145vh;
+    }
+    .Inicio .full-screen{
+        min-height: 100mvh;
+    }
+    .fila1{
+        padding-left: 980px;
+    }
+    .footer .caja .copyright{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 940px){
+
+    .Inicio{
+        min-height: 150vh;
     }
 }
