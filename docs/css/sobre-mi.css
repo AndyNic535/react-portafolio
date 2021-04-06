@@ -313,6 +313,10 @@ header .barra-de-navegacion ul li a.active::before{
     .sobre-mi .seccion-titulo h1:before{
         right: 67%;
     }
+    .sobre-mi .sobre-contenedor .texto{
+        padding-left: 0;
+        margin-left: 0;
+    }
     .sobre-mi .sobre-contenedor .texto .info .lista{
         flex: 0 0 100%;
         max-width: 100%

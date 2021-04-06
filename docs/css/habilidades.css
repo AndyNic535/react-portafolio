@@ -263,3 +263,24 @@ header .barra-de-navegacion ul li a.active::before{
         margin-left: 10px;
     }
 }
+@media(max-width: 450px){
+    .habilidades{
+        margin-left: 13px;
+        padding-left: 5px;
+    }
+    .habilidades .img{
+        display: none;
+    }
+    .habilidades .habilidades-contenido .seccion-titulo{
+        flex: 0 0 235%;
+        max-width: 300%;
+        display: inline-block;
+    }
+    .habilidades .habilidades-contenido .seccion-titulo h1:before{
+        right: 59%;
+    }
+    .habilidades .habilidades-contenido .habilidades-caja{
+        flex: 0 0 235%;
+        max-width: 300%;
+    }
+}
