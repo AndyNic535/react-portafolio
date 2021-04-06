@@ -358,7 +358,7 @@ header .barra-de-navegacion ul li a.active::before{
         left: 310px;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 470px){
     .portafolio .seccion-titulo h1{
         left: 10px;
     }
@@ -383,6 +383,7 @@ header .barra-de-navegacion ul li a.active::before{
         right: 28%;
     }
     .portafolio .seccion-titulo h1{
+        font-size: 33px;
         text-align: center;
     }
 }

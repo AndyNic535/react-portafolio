@@ -263,7 +263,7 @@ header .barra-de-navegacion ul li a.active::before{
         margin-left: 10px;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 470px){
     .habilidades{
         margin-left: 13px;
         padding-left: 5px;
