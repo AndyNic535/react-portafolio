@@ -365,3 +365,8 @@ header .barra-de-navegacion ul li a.active::before{
         min-height: 150vh;
     }
 }
+@media(max-width: 470px){
+    .Inicio{
+        min-height: 150vh;
+    }
+}

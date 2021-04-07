@@ -345,3 +345,55 @@ header .barra-de-navegacion ul li a.active::before{
         margin-left: 10px;
     }
 }
+@media(max-width: 750px){
+    .contactame{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+    .contactame .seccion-titulo h1:before{
+        left: 135px;
+        right: 32%;
+    }
+    .contactame .formulario-de-contacto .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contactame .seccion-titulo h1:before{
+        left: 260px;
+        right: 36%;
+    }
+    .cuentas-sociales{
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+@media(max-width: 470px){
+    .contactame{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+    .contactame .seccion-titulo h1:before{
+        left: 135px;
+        right: 32%;
+    }
+    .contactame .formulario-de-contacto .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .cuentas-sociales{
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+@media(max-width: 360px){
+    .contactame .seccion-titulo h1:before{
+        left: 65px;
+        right: 19%;
+    }
+    .footer .caja .copyright{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}

@@ -276,9 +276,30 @@ header .barra-de-navegacion ul li a.active::before{
         margin-left: 10px;
     }
 }
-@media(max-width: 1033px){
-
+@media(max-width: 750px){
     .Trabajos .seccion-titulo h1{
-        left: 410px;
+        left: 140px;
+    }
+    .Trabajos .trabajos-contenido .caja{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width: 470px){
+    .Trabajos .seccion-titulo h1{
+        left: 140px;
+    }
+    .Trabajos .trabajos-contenido .caja{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width: 360px){
+    .Trabajos .seccion-titulo h1{
+        left: 75px;
+    }
+    .footer .caja .copyright{
+        font-size: 12px;
+        margin-left: 10px;
     }
 }

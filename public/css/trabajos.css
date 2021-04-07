@@ -353,9 +353,12 @@ header .barra-de-navegacion ul li a.active::before{
         margin-left: 10px;
     }
 }
-@media(max-width: 1033px){
+@media(max-width: 750px){
     .portafolio .seccion-titulo h1{
-        left: 310px;
+        left: 170px;
+    }
+    .portafolio .portafolio-galeria .item img{
+        height: 160px;
     }
 }
 @media(max-width: 470px){
@@ -384,6 +387,40 @@ header .barra-de-navegacion ul li a.active::before{
     }
     .portafolio .seccion-titulo h1{
         font-size: 33px;
+        left: 25px;
+    }
+}
+@media(max-width: 350px){
+    .portafolio .seccion-titulo h1{
+        left: 10px;
+    }
+    .portafolio .portafolio-galeria .item img{
+        margin-left: 4px;
+        height: 120px;
+    }
+    .portafolio .botones-de-filtro ul li{
+        font-size: 8px;
+    }
+    .portafolio .portafolio-galeria .item .overlay .fa{
+        line-height: 40px;
         text-align: center;
+        font-size: 16px;
+        height: 40px;
+        width: 40px;
+    }
+    .portafolio .portafolio-galeria .item .overlay h4{
+        font-size: 15px;
+    }
+    .portafolio .seccion-titulo h1:before{
+        left: 0px;
+        right: 57%;
+    }
+    .portafolio .seccion-titulo h1{
+        font-size: 33px;
+        left: 25px;
+    }
+    .footer .caja .copyright{
+        font-size: 12px;
+        margin-left: 10px;
     }
 }

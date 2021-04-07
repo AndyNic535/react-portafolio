@@ -112,4 +112,88 @@ body{
                /*--Fin Footer--*/
     /*------------------------------------*/
             
-    /*-------------------------------------------------------------------------------------------------------*
+/*-------------------------------------------------------------------------------------------------------*/
+
+    @media(max-width: 1080px){
+        header{
+            position: fixed;
+            padding: 15px;
+        }
+        header .nombre-de-la-marca a{
+            color: #ff4500;
+        }
+        .ham-burger .fa{
+            display: inline-block;
+        }
+        .barra-de-navegacion{
+            position: absolute;
+            background-color: #000000;
+            border-top: 2px solid #9f9f9f;
+            width: 100%;
+            left: 0;
+            top: 69px;
+            padding: 15px;
+            display: none;
+        }
+        .barra-de-navegacion.show{
+            display: block;
+        }
+        header .barra-de-navegacion ul li{
+            display: block;
+            margin-left: 0;
+        }
+        header .barra-de-navegacion ul li a{
+            line-height: 47px;
+        }
+        header .barra-de-navegacion ul li a::before{
+            background-color: #ff4500;
+        }
+        .footer .caja .copyright{
+            margin-left: 10px;
+        }
+    }
+@media(max-width: 750px){
+    .muchas-gracias .seccion-titulo{
+        padding-top: 20px;
+    }
+    .muchas-gracias .seccion-titulo h1:before{
+        left: 187px;
+        right: 25%;
+    }
+    .muchas-gracias{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+}
+@media(max-width: 470px){
+    .muchas-gracias .seccion-titulo{
+        padding-top: 20px;
+    }
+    .muchas-gracias{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+    .muchas-gracias .seccion-titulo h1:before{
+        left: 127px;
+        right: 29%;
+    }
+    .muchas-gracias .caja .texto p{
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+@media(max-width: 360px){
+    .muchas-gracias .seccion-titulo{
+        padding-top: 20px;
+    }
+    .muchas-gracias .seccion-titulo h1:before{
+        left: 77px;
+        right: 21%;
+    }
+    .footer .caja .copyright{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
