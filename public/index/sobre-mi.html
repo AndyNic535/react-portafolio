@@ -2,7 +2,7 @@
 
 <!-------------------------------------------------------------------------------------------------------->
 
-<html>
+<html id="page">
     <!--Comienza Head-->
     <head>
 
@@ -14,13 +14,27 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/sobre-mi.css">
     <!-- Fin Stilos -->
-      
+
       <title>Mi Portafolio - Sobre Mi</title>
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial1-scale=1">
     </head>
     <!--Fin Head-->
 
-<!-------------------------------------------------------------------------------------------------------->      
+<!-------------------------------------------------------------------------------------------------------->
+
+    <!--Comienza Modo Oscuro-->
+      <div class="container-btn-mode animate__animated animate__fadeIn animate__delay-1s">
+        <div id="id-sun" class="btn-mode sun activo">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div id="id-moon" class="btn-mode moon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+    <!--Fin Modo Oscuro-->
+ 
+<!-------------------------------------------------------------------------------------------------------->     
     <body>      
 
       <!--Comienza Encabezamiento-->
@@ -51,7 +65,7 @@
 <!-------------------------------------------------------------------------------------------------------->
 
       <!--Comienza Sobre Mi-->
-      <section class="sobre-mi">
+      <section id="page" class="sobre-mi">
         <diz class="contenido">
           <div class="fila">
             <div class="seccion-titulo animate__animated animate__backInRight">
@@ -114,5 +128,6 @@
 
 <!-------------------------------------------------------------------------------------------------------->
     </body>
+    <script src="../js/modo-oscuro.js"></script>
     <script src="../js/navbar.js"></script>
 </html>

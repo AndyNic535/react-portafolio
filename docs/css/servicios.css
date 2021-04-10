@@ -29,7 +29,7 @@ header{
     position: absolute;
     right: 0px;
     left:0px;
-    border-bottom: 3px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
     z-index: 10;
 }
 header .fila{
@@ -40,7 +40,7 @@ header .nombre-de-la-marca a{
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
-    color: #ffffff;
+    color: #ff4500;
     text-transform: uppercase;
     position: relative;
     transition: all .5s ease;
@@ -63,7 +63,7 @@ header .barra-de-navegacion ul li a{
     font-size: 15px;
     text-decoration: none;
     line-height: 72px;
-    color: #ffffff;
+    color: #ff4500;
     display: block;
     font-weight: 600;
     position: relative;
@@ -71,7 +71,7 @@ header .barra-de-navegacion ul li a{
 header .barra-de-navegacion ul li a::before{
     content: " ";
     height: 3px;
-    background-color: #ffffff;
+    background-color: #ff4500;
     width: 0%;
     position: absolute;
     right: 0px;
@@ -88,6 +88,75 @@ header .barra-de-navegacion ul li a.active::before{
 }
     /*------------------------------------*/
          /*--Fin Encabezamiento--*/
+    /*------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+         /*--Comienza Modo Oscuro--*/
+    /*------------------------------------*/
+
+.container-btn-mode{
+    position: absolute;
+    right: 30px;
+    bottom: 580px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+}
+.btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+}
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+}
+.btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.activo{
+    background-color:black;
+    color:#ffcd5c !important;
+}
+.dark-mode .btn-mode.sun{
+    background-color: #c0c0c0;
+}
+.dark-mode body{
+    background-color: #2e2e2e;
+}
+.dark-mode .Trabajos{
+    background-color: #2e2e2e;
+}
+.dark-mode .Trabajos .seccion-titulo h1{
+    color: #ffffff;
+}
+.dark-mode .Trabajos .trabajos-contenido .caja{
+    background-color: #000000;
+}
+.dark-mode .Trabajos .trabajos-contenido .caja .icono:hover{
+    background-color: #ffffff;
+}
+.dark-mode .Trabajos .trabajos-contenido .caja h5{
+    color: #ffffff;
+}
+.dark-mode .Trabajos .trabajos-contenido .caja p{
+    color: #838383;
+}
+
+    /*------------------------------------*/
+           /*--Fin Modo Oscuro--*/
     /*------------------------------------*/
 
 /*-------------------------------------------------------------------------------------------------------*/    

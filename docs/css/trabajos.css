@@ -29,7 +29,7 @@ header{
     position: absolute;
     right: 0px;
     left:0px;
-    border-bottom: 3px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
     z-index: 10;
 }
 header .fila{
@@ -40,7 +40,7 @@ header .nombre-de-la-marca a{
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
-    color: #ffffff;
+    color: #ff4500;
     text-transform: uppercase;
     position: relative;
     transition: all .5s ease;
@@ -63,7 +63,7 @@ header .barra-de-navegacion ul li a{
     font-size: 15px;
     text-decoration: none;
     line-height: 72px;
-    color: #ffffff;
+    color: #ff4500;
     display: block;
     font-weight: 600;
     position: relative;
@@ -71,7 +71,7 @@ header .barra-de-navegacion ul li a{
 header .barra-de-navegacion ul li a::before{
     content: " ";
     height: 3px;
-    background-color: #ffffff;
+    background-color: #ff4500;
     width: 0%;
     position: absolute;
     right: 0px;
@@ -90,6 +90,69 @@ header .barra-de-navegacion ul li a.active::before{
          /*--Fin Encabezamiento--*/
     /*------------------------------------*/
 
+/*-------------------------------------------------------------------------------------------------------*/
+
+    /*------------------------------------*/
+         /*--Comienza Modo Oscuro--*/
+    /*------------------------------------*/
+
+.container-btn-mode{
+    position: absolute;
+    right: 30px;
+    bottom: 580px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+}
+.btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+}
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+}
+.btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.activo{
+    background-color:black;
+    color:#ffcd5c !important;
+}
+.dark-mode .btn-mode.sun{
+    background-color: #c0c0c0;
+}
+.dark-mode body{
+    background-color: #2e2e2e;
+}
+.dark-mode .portafolio{
+    background-color: #2e2e2e;
+}
+.dark-mode .portafolio .seccion-titulo h1{
+    color: #ffffff;
+}
+.dark-mode .portafolio .botones-de-filtro ul li{
+    color: #ffffff;
+}
+.dark-mode .portafolio .portafolio-galeria .item img{
+    border: solid 2px #5f5f5f;
+}
+
+    /*------------------------------------*/
+           /*--Fin Modo Oscuro--*/
+    /*------------------------------------*/
+
 /*-------------------------------------------------------------------------------------------------------*/    
 
     /*------------------------------------*/
@@ -101,8 +164,9 @@ header .barra-de-navegacion ul li a.active::before{
     padding: 100px 7px;
 }
 .portafolio .seccion-titulo h1{
-    left: 470px;
-    display: block;
+    right: 110%;
+    left: 110%;
+    display: inline-block;
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 700;
@@ -311,8 +375,12 @@ header .barra-de-navegacion ul li a.active::before{
     /*------------------------------------*/
         
 /*-------------------------------------------------------------------------------------------------------*/
-
-@media(max-width: 1080px){
+@media(max-height: 656px){
+    .container-btn-mode{
+        bottom: 540px;
+    }
+}
+@media(max-width: 1024px){
     header{
         padding: 15px;
         position: fixed;
@@ -347,13 +415,16 @@ header .barra-de-navegacion ul li a.active::before{
         background-color: #ff4500;
     }
     .portafolio .seccion-titulo h1{
-        left: 325px;
+        left: 203%;
+    }
+    .portafolio .seccion-titulo span{
+        font-size: 0px;
     }
     .footer .caja .copyright{
         margin-left: 10px;
     }
 }
-@media(max-width: 750px){
+@media(max-width: 768px){
     .portafolio .seccion-titulo h1{
         left: 170px;
     }
@@ -361,10 +432,7 @@ header .barra-de-navegacion ul li a.active::before{
         height: 160px;
     }
 }
-@media(max-width: 470px){
-    .portafolio .seccion-titulo h1{
-        left: 10px;
-    }
+@media(max-width: 480px){
     .portafolio .portafolio-galeria .item img{
         height: 120px;
     }
@@ -386,38 +454,44 @@ header .barra-de-navegacion ul li a.active::before{
         right: 28%;
     }
     .portafolio .seccion-titulo h1{
-        font-size: 33px;
         left: 25px;
     }
-}
-@media(max-width: 350px){
-    .portafolio .seccion-titulo h1{
-        left: 10px;
+    .portafolio .seccion-titulo span{
+        font-size: 0px;
     }
+}
+@media(max-width: 400px){
+    .portafolio .botones-de-filtro ul li{
+        font-size: 9px;
+    }
+}
+@media(max-width: 320px){
     .portafolio .portafolio-galeria .item img{
         margin-left: 4px;
-        height: 120px;
+        height: 110px;
     }
     .portafolio .botones-de-filtro ul li{
-        font-size: 8px;
+        font-size: 7px;
     }
     .portafolio .portafolio-galeria .item .overlay .fa{
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
-        font-size: 16px;
-        height: 40px;
-        width: 40px;
+        font-size: 13px;
+        height: 30px;
+        width: 30px;
     }
     .portafolio .portafolio-galeria .item .overlay h4{
-        font-size: 15px;
+        font-size: 11px;
     }
     .portafolio .seccion-titulo h1:before{
         left: 0px;
         right: 57%;
     }
     .portafolio .seccion-titulo h1{
-        font-size: 33px;
-        left: 25px;
+        text-align: center;
+    }
+    .portafolio .seccion-titulo span{
+        font-size: 0px;
     }
     .footer .caja .copyright{
         font-size: 12px;
